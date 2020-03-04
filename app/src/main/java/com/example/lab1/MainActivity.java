@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (Integer.parseInt(secondNumber.getText().toString()) != 0) {
-                    int result = Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString());
-                    resultTextView.setText(result);
+                    int result = Integer.parseInt(firstNumber.getText().toString()) / Integer.parseInt(secondNumber.getText().toString());
+                    resultTextView.setText(String.valueOf(result));
                 } else {
                     resultTextView.setText(R.string.error);
                 }
@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int result = Integer.parseInt(firstNumber.getText().toString()) - Integer.parseInt(secondNumber.getText().toString());
-                resultTextView.setText(result);
+                resultTextView.setText(String.valueOf(result));
             }
         });
 
-        multiply.setOnClickListener(v -> resultTextView.setText(Integer.parseInt(firstNumber.getText().toString()) * Integer.parseInt(secondNumber.getText().toString())));
+        multiply.setOnClickListener(v -> resultTextView.setText(String.valueOf(Integer.parseInt(firstNumber.getText().toString()) * Integer.parseInt(secondNumber.getText().toString()))));
 
-        plus.setOnClickListener(v -> resultTextView.setText(Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString())));
+        plus.setOnClickListener(v -> resultTextView.setText(String.valueOf(Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString()))));
 
     }
 }

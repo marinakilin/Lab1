@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/firstNumber"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:inputType="number"
@@ -18,8 +18,8 @@
 
     <EditText
         android:id="@+id/secondNumber"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:inputType="number"
@@ -28,38 +28,42 @@
 
     <Button
         android:id="@+id/plusButton"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
+        android:text="@string/plus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/firstNumber" />
 
     <Button
         android:id="@+id/minusButton"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
+        android:text="@string/minus"
         app:layout_constraintStart_toEndOf="@+id/plusButton"
         app:layout_constraintTop_toBottomOf="@id/firstNumber" />
 
     <Button
         android:id="@+id/multiplyButton"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/divideButton"
-        app:layout_constraintTop_toBottomOf="@id/secondNumber" />
+        android:text="@string/multiply"
+        app:layout_constraintStart_toEndOf="@id/minusButton"
+        app:layout_constraintTop_toBottomOf="@id/firstNumber" />
 
     <Button
         android:id="@+id/divideButton"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="15dp"
+        android:text="@string/divide"
+        app:layout_constraintStart_toEndOf="@id/multiplyButton"
         app:layout_constraintTop_toBottomOf="@id/secondNumber" />
 
     <TextView

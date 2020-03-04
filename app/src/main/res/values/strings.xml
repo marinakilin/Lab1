@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Lab1</string>
     <string name="error">Error</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
 </resources>
